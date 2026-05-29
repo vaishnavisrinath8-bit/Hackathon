@@ -15,8 +15,8 @@ const expoHost =
   (Constants as any)?.manifest2?.extra?.expoGo?.debuggerHost?.split(':')[0] ||
   null;
 
-const fallbackApi = expoHost ? `http://${expoHost}:3000/api` : 'http://192.168.29.9:3000/api';
-const fallbackVoice = expoHost ? `http://${expoHost}:8001/api` : 'http://192.168.29.9:8001/api';
+const fallbackApi = expoHost ? `http://${expoHost}:3000/api` : 'http://10.60.205.32:3000/api';
+const fallbackVoice = expoHost ? `http://${expoHost}:8001/api` : 'http://10.60.205.32:8001/api';
 
 const BASE = envApiUrl ?? fallbackApi;
 const VOICE = envVoiceUrl ?? fallbackVoice;
